@@ -20,7 +20,7 @@ hr {border-top: 1px solid #eee;border-bottom: 1px solid #fcfcfc;}
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary.active,
-.btn-primary.disabled,
+.btn-primary.disabled
 .btn-primary[disabled] {
   background-color: #005580;
   *background-color: #005580;
@@ -78,7 +78,7 @@ hr {border-top: 1px solid #eee;border-bottom: 1px solid #fcfcfc;}
 .blogitem .blogitem-date {position: absolute; top: 0; left: 0; width: 25px; height: 35px; padding: 5px 10px; background: rgba(0,0,0,.5); color: #fff; text-align: center;}
 .blogitem .blogitem-date .month, .blogitem .blogitem-date .day {font-weight: bold; display: block; font-size: 12px; line-height: 16px;}
 .blogitem .blogitem-date .day {font-size: 16px;}
-.blogitem .blogitem-hoverinfo, .portfolioitem .portfolioitem-hoverinfo {position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: none; padding: 20px 30px; font-size: 16px;}
+.blogitem .blogitem-hoverinfo, .portfolioitem .portfolioitem-hoverinfo {position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: none; padding: 20px 30px; font-size: 19px;}
 .blogitem .blogitem-hoverinfo {padding: 30px;}
 .portfolioitem .portfolioitem-hoverinfo p {opacity: .9;filter: alpha(opacity=90);}
 .blogitem .blogitem-actions, .portfolioitem .portfolioitem-actions {margin-top: 30px;text-align: center;}
