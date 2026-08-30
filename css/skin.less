@@ -1,18 +1,24 @@
 /* Skin Parameters */
-@primarycolor: #ce5252;
-@secondarycolor: #9c383a;
+@primarycolor: #8a2e31;
+@secondarycolor: #6f2024;
+
 @bgcolor: #ececec;
-@navbgprimarycolor: #ce5252;
-@navbgsecondarycolor: #9c383a;
-@navborder: #9c383a;
+
+@navbgprimarycolor: #8a2e31;
+@navbgsecondarycolor: #6f2024;
+@navborder: #6f2024;
+
 @navcolor: #fff;
 @navcolorhover: #fff;
-@footercolor:#666;
+
+@footercolor: #666;
 @sectiontitlecolor: #fff;
-@sectiontitlebgprimarycolor: #ce5252;
-@sectiontitlebgsecondarycolor: #9c383a;
-@btnbgcolor: #ce5252;
-@btnbgcolorhover: #800049;
+@sectiontitlebgprimarycolor: #8a2e31;
+@sectiontitlebgsecondarycolor: #6f2024;
+
+@btnbgcolor: #8a2e31;
+@btnbgcolorhover: #6f2024;
+
 @timelinebgcolor: #ce5252;
 @timelinebgcolorhover: #9c383a;
 @progressbarprimary: #ce5252;
@@ -30,38 +36,213 @@
 
 
 /* Skin CSS */
-h1, h2, h3, h4, h5, h6 {font-family: @font;}
-a,.primary-color, .dark .primary-color {color: @primarycolor;}
-a:hover {color: @secondarycolor;}
-.blogitem .blogitem-hoverinfo, .portfolioitem .portfolioitem-hoverinfo {background-color: @itemhover; color: @itemhovertext;}
-#resumenav a {color: @navcolor;}
-#resumenav a:hover {background-color: @navbgsecondarycolor; color: @navcolorhover;}
-.nav-pills > .active > a, .nav-pills > .active > a:hover,
-.nav-list > .active > a, .nav-list > .active > a:hover,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: @font;
+}
+
+a,
+.primary-color,
+.dark .primary-color {
+	color: @primarycolor;
+}
+
+a:hover {
+	color: @secondarycolor;
+}
+
+.blogitem .blogitem-hoverinfo,
+.portfolioitem .portfolioitem-hoverinfo {
+	background-color: @itemhover;
+	color: @itemhovertext;
+}
+
+#resumenav a {
+	color: @navcolor;
+}
+
+#resumenav a:hover {
+	background-color: @navbgsecondarycolor;
+	color: @navcolorhover;
+}
+
+.nav-pills>.active>a,
+.nav-pills>.active>a:hover,
+.nav-list>.active>a,
+.nav-list>.active>a:hover,
 .icon-btn:hover,
-.btn-primary:hover, 
-.blogitem .blogitem-actions a:hover, .portfolioitem .portfolioitem-actions a:hover 
-{background-color: @btnbgcolorhover!important;}
-#resumenav li.active a, .nav-pills > .active > a {background-color: @navbgsecondarycolor!important; color: @navcolorhover;}
-.icon-btn,.btn-primary {background-color: @btnbgcolor;}
+.btn-primary:hover,
+.blogitem .blogitem-actions a:hover,
+.portfolioitem .portfolioitem-actions a:hover {
+	background-color: @btnbgcolorhover !important;
+}
+
+#resumenav li.active a,
+.nav-pills>.active>a {
+	background-color: @navbgsecondarycolor !important;
+	color: @navcolorhover;
+}
+
+.icon-btn,
+.btn-primary {
+	background-color: @btnbgcolor;
+}
+
 .progress .bar {
 	background-color: @progressbarprimary;
 	background-image: -moz-linear-gradient(top, @progressbarprimary, @progressbarsecondary);
-  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@progressbarprimary), to(@progressbarsecondary));
-  	background-image: -webkit-linear-gradient(top, @progressbarprimary, @progressbarsecondary);
-  	background-image: -o-linear-gradient(top, @progressbarprimary, @progressbarsecondary);
-  	background-image: linear-gradient(to bottom, @progressbarprimary, @progressbarsecondary);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@progressbarprimary), to(@progressbarsecondary));
+	background-image: -webkit-linear-gradient(top, @progressbarprimary, @progressbarsecondary);
+	background-image: -o-linear-gradient(top, @progressbarprimary, @progressbarsecondary);
+	background-image: linear-gradient(to bottom, @progressbarprimary, @progressbarsecondary);
 }
-body {background: @bgcolor url(@bgimage) fixed repeat !important;}
-#content {background: #fff;box-shadow: 0 0 @shadowsize rgba(0,0,0,@shadowopacity);}
-#sidebar.sbright .sidebar-nav {background: @navbgprimarycolor; border-left: 5px solid @navborder; border-right: none;}
-#sidebar.sbleft .sidebar-nav {background: @navbgprimarycolor; border-right: 5px solid @navborder; border-left: none;}
-#footer {color: @footercolor;}
-.section .section-title {color: @sectiontitlecolor; background-color: @sectiontitlebgprimarycolor; border-right: 5px solid @sectiontitlebgsecondarycolor;}
-.section .section-title .glyphicons i:before{color: @sectiontitlecolor!important;}
-.timeline-item-trigger span i:before {background-color: @timelinebgcolor; border: 6px solid @timelinebgcolor; }
-.timeline-item-trigger span:hover i:before {background-color: @timelinebgcolorhover; border-color: @timelinebgcolorhover;}
+
+body {
+	background: @bgcolor url(@bgimage) fixed repeat !important;
+}
+
+#content {
+	background: #fff;
+	box-shadow: 0 0 @shadowsize rgba(0, 0, 0, @shadowopacity);
+}
+
+#sidebar.sbright .sidebar-nav {
+	background: @navbgprimarycolor;
+	border-left: 5px solid @navborder;
+	border-right: none;
+}
+
+#sidebar.sbleft .sidebar-nav {
+	background: @navbgprimarycolor;
+	border-right: 5px solid @navborder;
+	border-left: none;
+}
+
+#footer {
+	color: @footercolor;
+}
+
+.section .section-title {
+	color: @sectiontitlecolor;
+	background-color: @sectiontitlebgprimarycolor;
+	border-right: 5px solid @sectiontitlebgsecondarycolor;
+}
+
+.section .section-title .glyphicons i:before {
+	color: @sectiontitlecolor !important;
+}
+
+.timeline-item-trigger span i:before {
+	background-color: @timelinebgcolor;
+	border: 6px solid @timelinebgcolor;
+}
+
+.timeline-item-trigger span:hover i:before {
+	background-color: @timelinebgcolorhover;
+	border-color: @timelinebgcolorhover;
+}
 
 @media (max-width: 767px) {
-	.section .section-title {border-bottom: 5px solid @secondarycolor; border-top: 5px solid @secondarycolor;}
+	.section .section-title {
+		border-bottom: 5px solid @secondarycolor;
+		border-top: 5px solid @secondarycolor;
+	}
+}
+
+/* =========================================================
+   Accessible colors: Research Interests and publication filters
+   ========================================================= */
+
+/* Shared accessible label colors */
+.hobbies .label,
+.filterSection .label {
+	color: #ffffff;
+	background-color: #595959;
+	font-weight: normal;
+}
+
+/* Ensure all Research Interests text and icons remain white */
+.hobbies .label .glyphicons,
+.hobbies .label .glyphicons i:before {
+	color: #ffffff !important;
+}
+
+/* Publication filter labels are clickable */
+.filterSection label.label {
+	cursor: pointer;
+}
+
+/* Publication filter label hover */
+.filterSection label.label:hover {
+	color: #ffffff;
+	background-color: #404040;
+}
+
+/* Keyboard focus indicator */
+.filterSection input[type="checkbox"]:focus-visible+label.label {
+	color: #ffffff;
+	background-color: #404040;
+	outline: 3px solid #76282a;
+	outline-offset: 2px;
+}
+
+/* Accessible Research Interests section heading */
+.hobbies .section-title {
+	color: #ffffff;
+	background-color: #8a2e31;
+	border-right-color: #6f2024;
+}
+
+/* Ensure the heading icon remains white */
+.hobbies .section-title .glyphicons,
+.hobbies .section-title .glyphicons i:before {
+	color: #ffffff !important;
+}
+
+/* Accessible link inside the Research Interests well */
+.hobbies .well a,
+.hobbies .well a:visited {
+	color: #76282a;
+	text-decoration: underline;
+}
+
+.hobbies .well a:hover,
+.hobbies .well a:focus {
+	color: #541619;
+	text-decoration: underline;
+}
+
+.hobbies .well a:focus-visible {
+	outline: 3px solid #222222;
+	outline-offset: 2px;
+}
+
+/* Force accessible publication link colors */
+#itemsToFilter li a,
+#itemsToFilter li a:link,
+#itemsToFilter li a:visited {
+	color: @primarycolor !important;
+	text-decoration: underline;
+}
+
+#itemsToFilter li a:hover,
+#itemsToFilter li a:focus {
+	color: #5f1d20 !important;
+}
+
+#itemsToFilter li a:focus-visible {
+	outline: 3px solid #222222;
+	outline-offset: 2px;
+}
+
+.profile-title {
+	font-family: @font;
+	font-size: 17.5px;
+	line-height: 20px;
+	font-weight: normal;
+	margin: 10px 0;
 }
